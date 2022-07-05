@@ -1,0 +1,11 @@
+{
+  "name": "gleaph",
+  "version": "1.0.0",
+  "description": "Sass implementation",
+  "main": "index.js",
+  "scripts": {
+    "sass": "css/base/base.scss:css/style.css"
+  },
+  "author": "Baugard Mathieu",
+  "license": "ISC"
+}

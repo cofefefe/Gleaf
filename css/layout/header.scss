@@ -1,0 +1,60 @@
+body{
+    display:flex;
+    flex-direction:row;
+}
+header{
+    display:flex;
+    flex-direction:column;
+    background-color:black;
+    width:100px;
+    height:789px;
+    position:sticky;
+    color:white;
+    font-family: Gelael;
+    font-size:20px;
+    text-align:center;
+    &__params{
+        padding:0;
+        margin-top:50px;
+    }
+    &__icon{
+        list-style-type:none;
+        height:130px;
+        font-size:30px;
+        background-color:black;
+        filter:brightness(1);
+        transition:all 4ms ease;
+        cursor:pointer;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        &:hover{
+            background-color:white;
+            color:black;
+            
+        }
+    }
+}
+.baneer{
+    width:100%;
+    background-color:rgb(80, 77, 77);
+    height:90px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius:50%;
+    text-align:center;
+    color:white;
+  
+    h1{
+        font-size:28px;
+        letter-spacing: 4px;
+        font-family:Gelael;
+        padding:0;
+        margin:5px;
+    }
+    h2{
+        font-size:14px;
+        font-family:Gelaelfit;
+        letter-spacing:3px;
+    }
+}
