@@ -4,7 +4,7 @@
   "description": "Sass implementation",
   "main": "index.js",
   "scripts": {
-    "sass": "css/base/base.scss:css/style.css"
+    "sass": "css/utils/style.scss:css/style.css"
   },
   "author": "Baugard Mathieu",
   "license": "ISC"

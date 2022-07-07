@@ -1,0 +1,38 @@
+.mainpage{
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    bottom:0;
+}
+footer ul {
+    display:flex;
+    flex-direction:column;
+}
+.footer{
+    list-style-type: none;
+    font-family: Gelaelthin, sans-serif;
+    margin-top: 570px;
+    width: 100%;
+    
+    &__list{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        width:100%;
+        
+        &--mention{
+            display:flex;
+            flex-direction:column;
+        }
+        &--commu{
+            display:flex;
+            flex-direction:column;
+        }
+        &--contact{
+            display:flex;
+            flex-direction:column;
+        }
+    }
+
+}
+

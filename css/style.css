@@ -1,9 +1,60 @@
+@font-face {
+  font-family: Gelael;
+  src: url(/medias/font/Gelael/Gelael\ Light.otf);
+}
+@font-face {
+  font-family: GelaelFit;
+  src: url(/medias/font/Gelael/Gelael\ Text\ Light.otf);
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.mainpage {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 0;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  list-style-type: none;
+  font-family: Gelaelthin, sans-serif;
+  margin-top: 570px;
+  width: 100%;
+}
+.footer__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer__list--mention {
+  display: flex;
+  flex-direction: column;
+}
+.footer__list--commu {
+  display: flex;
+  flex-direction: column;
+}
+.footer__list--contact {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   display: flex;
   flex-direction: row;
 }
 
-header {
+.header {
   display: flex;
   flex-direction: column;
   background-color: black;
@@ -15,11 +66,11 @@ header {
   font-size: 20px;
   text-align: center;
 }
-header__params {
+.header__params {
   padding: 0;
   margin-top: 50px;
 }
-header__icon {
+.header__icon {
   list-style-type: none;
   height: 130px;
   font-size: 30px;
@@ -31,7 +82,7 @@ header__icon {
   justify-content: center;
   align-items: center;
 }
-header__icon:hover {
+.header__icon:hover {
   background-color: white;
   color: black;
 }
