@@ -1,3 +1,5 @@
+@import '../base/variable.scss';
+
 body{
     display:flex;
     flex-direction:row;
@@ -5,11 +7,11 @@ body{
 .header{
     display:flex;
     flex-direction:column;
-    background-color:black;
+    background-color:$secondary-color;
     width:100px;
     height:789px;
     position:sticky;
-    color:white;
+    color:$third-color;
     font-family: Gelael;
     font-size:20px;
     text-align:center;
@@ -21,7 +23,7 @@ body{
         list-style-type:none;
         height:130px;
         font-size:30px;
-        background-color:black;
+        background-color:$secondary-color;
         filter:brightness(1);
         transition:all 4ms ease;
         cursor:pointer;
@@ -30,8 +32,8 @@ body{
         align-items:center;
 
         &:hover{
-            background-color:white;
-            color:black;
+            background-color:$third-color;
+            color:$secondary-color;
             
         }
     }

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,700,900");
 @font-face {
   font-family: Gelael;
   src: url(/medias/font/Gelael/Gelael\ Light.otf);
@@ -12,16 +13,44 @@ body {
   width: 100%;
 }
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
 .mainpage {
   display: flex;
   flex-direction: column;
   position: relative;
-  bottom: 0;
+  width: 100%;
 }
 
 footer ul {
   display: flex;
   flex-direction: column;
+  list-style-type: none;
+  margin: 5px auto 10px auto;
+}
+footer ul li {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  transform: scale(1), brightness(1);
+  height: 8px;
+  width: 280px;
+}
+footer ul li:hover {
+  font-size: 18px;
+}
+footer ul h4 {
+  margin-top: 10px;
+  margin-bottom: 18px;
+  padding: 0;
+}
+
+footer section {
+  display: flex;
+  flex-direction: row;
 }
 
 .footer {
@@ -29,12 +58,17 @@ footer ul {
   font-family: Gelaelthin, sans-serif;
   margin-top: 570px;
   width: 100%;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  bottom: 0;
 }
 .footer__list {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  flex-direction: row;
 }
 .footer__list--mention {
   display: flex;
@@ -107,6 +141,149 @@ body {
   font-size: 14px;
   font-family: Gelaelfit;
   letter-spacing: 3px;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  background: #111;
+  text-align: center;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonIndex {
+  margin: 0 25px 0 25px;
+  user-select: none;
+  display: inline-block;
+  border: 0.2em solid;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  opacity: 0.6;
+  color: #FFF;
+}
+.buttonIndex__text {
+  display: block;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.buttonIndex__text:before {
+  content: attr(title);
+}
+.buttonIndex__text--bis {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(-1em);
+  opacity: 0;
+}
+.buttonIndex__mask {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  transform: translateX(-100%) rotate(45deg);
+  transition: all 0.3s;
+}
+
+.buttonIndex:hover {
+  opacity: 1;
+}
+.buttonIndex:hover .buttonIndex__text {
+  animation: fx-text 0.3s ease-out;
+}
+.buttonIndex:hover .buttonIndex__text--bis {
+  animation: fx-text-bis 0.3s ease-out;
+}
+.buttonIndex:hover .buttonIndex__mask {
+  animation: fx-mask 0.3s ease-out;
+}
+
+.buttonIndex:active {
+  opacity: 1;
+  background: white;
+  color: inherit;
+}
+
+@keyframes fx-mask {
+  0% {
+    transform: translateX(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(45deg);
+  }
+}
+@keyframes fx-text {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(1em);
+    opacity: 0;
+  }
+}
+@keyframes fx-text-bis {
+  0% {
+    transform: translateX(-1em);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 25px;
+}
+.menu button {
+  padding: 5px;
+}
+
+.searchTournament {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  height: 29px;
+  border-radius: 25px;
+  width: 440px;
+  border: white solid 1px;
+  transform: scale(1.2);
+  align-self: center;
+}
+.searchTournament input {
+  width: 400px;
+  height: 23px;
+  border-radius: 25px;
+  background-color: rgb(80, 77, 77);
+  color: white;
+  padding-left: 10px;
+}
+.searchTournament i {
+  color: white;
+  margin-left: 7px;
+  border: 1px solid white;
+  padding: 6.5px;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,24 +1,57 @@
+@import '../base/variable.scss';
+a{
+    cursor:pointer;
+    text-decoration: none;
+    color:$third-color;
+    
+}
 .mainpage{
     display:flex;
     flex-direction:column;
     position:relative;
-    bottom:0;
+    width:100%;
 }
 footer ul {
     display:flex;
     flex-direction:column;
+    list-style-type:none;
+    margin:5px auto 10px auto;
+
+    li{
+        margin-bottom:10px;
+        margin-top:10px;
+        transform: scale(1), brightness(1);
+        height:8px;
+        width:280px;
+        &:hover{
+            font-size:18px;
+        }
+    }
+    h4{
+        margin-top:10px;
+        margin-bottom:18px;
+        padding:0;
+    }
+}
+footer section{
+    display:flex;
+    flex-direction:row;
 }
 .footer{
     list-style-type: none;
     font-family: Gelaelthin, sans-serif;
     margin-top: 570px;
     width: 100%;
-    
+    background-color: $secondary-color;
+    color:$third-color;
+    font-size:15px;
+    position:absolute;
+    bottom:0;
     &__list{
         display:flex;
-        flex-direction:row;
         justify-content:space-between;
         width:100%;
+        flex-direction: row;
         
         &--mention{
             display:flex;
